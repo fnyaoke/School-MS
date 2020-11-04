@@ -17,7 +17,7 @@ class RegistrationForm(FlaskForm):
     parentGuardian = StringField("Enter your parent or guardian's full name", validators=[Required()])
     course = RadioField('Select your course', choices=[('Introduction to computers','Introduction to computers'),('Introduction to Programming','Introduction to Programming'), ('Web design 101', 'Web design 101'), ('Databases', 'Databases'), ('Application development', 'Application development')] , validators=[Required()])
     paymentPlan = RadioField('Select your payment plan', choices=[('self-sponsored','self-sponsored'),('scholarship','scholarship'), ('bursary', 'bursary')] , validators=[Required()])
-    password = PasswordField('Password', validators=[Required(), EqualTo('password_confirm', message='Passwords must match')])
+    password = PasswordField('Create Password', validators=[Required(), EqualTo('password_confirm', message='Passwords must match')])
     password_confirm = PasswordField('Confirm Password', validators=[Required()])
     submit = SubmitField('Register')
 
