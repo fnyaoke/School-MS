@@ -9,14 +9,14 @@ from flask_login import login_user, logout_user, login_required
 
 
 #email, name, contact, parentGuardian, course, paymentPlan, password, password_confirm, submit
-@auth.route('/login')
+@auth.route('/login', methods = ['GET', 'POST'])
 def login():
     login_form = LoginForm()
     if login_form.validate_on_submit():
         user = User.query.filter_by(email = login_form.email.data).first()
         if user is not None and user.verify_password(login_form.password.data):
             login_user(user, login_form.remember.data)
-            return redirect(request.args.get('next') or url_for('main.profile(user.student_id)'))
+            return redirect(request.args.get('next') or url_for('main.profile',student_id=user.student_id))
         flash('Invalid username or Password')
 
     title = 'tushauriane school login'
@@ -30,6 +30,7 @@ def register():
      
     digits = string.digits
     students_id = ''.join((random.choice(digits) for i in range(10)))
+
     if User.query.filter_by(student_id = students_id).first():
         
         digits = string.digits
@@ -40,7 +41,6 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-#        mail_message("Welcome to One Min Pitch!", "email/welcome_user", user.email, user = user)
         return redirect(url_for('auth.login'))
         title = 'New Account'
 

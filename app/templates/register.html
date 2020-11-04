@@ -12,7 +12,8 @@
             
         </div>
         <div class="col-md-8">
-           
+        <form method="post">
+            {{ registration_form.hidden_tag() }}
             <p>{{wtf.form_field(registration_form.email)}}</p>
 
             
@@ -36,8 +37,9 @@
             
             <p>{{wtf.form_field(registration_form.password_confirm)}}</p>
             
+            <input type=submit value=Register>
             
-            <p>{{wtf.form_field(registration_form.submit)}}</p>
+        </form>
         </div>
     </div>
 </div>
