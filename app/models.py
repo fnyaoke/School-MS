@@ -18,6 +18,7 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(255), unique = True, index = True)
     contact = db.Column(db.String(255))
     student_id = db.Column(db.String(255))
+    course = db.Column(db.String(255))
     parentGuardian = db.Column(db.String(255))
     paymentPlan = db.Column(db.String(255))
     pass_secure = db.Column(db.String(255))
