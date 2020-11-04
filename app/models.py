@@ -39,3 +39,11 @@ class User(UserMixin, db.Model):
 
     def __repr__(self):
         return f'Student {self.name}'
+
+class Courses:
+
+    
+    def __init__ (self, course_name, course_units, course_fees):
+        self.course_name = course_name
+        self.course_units = course_units
+        self.course_fees = course_fees
