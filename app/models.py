@@ -42,8 +42,12 @@ class User(UserMixin, db.Model):
 
 class Courses:
 
+    all_courses = []
     
-    def __init__ (self, course_name, course_units, course_fees):
+    def __init__ (self, course_name, course_units):
         self.course_name = course_name
         self.course_units = course_units
-        self.course_fees = course_fees
+        
+
+    def save_courses(self):
+        Courses.all_courses.append(self)

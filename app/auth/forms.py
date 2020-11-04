@@ -15,7 +15,7 @@ class RegistrationForm(FlaskForm):
     name = StringField('Enter your full name', validators=[Required()])
     contact = StringField('Enter your phone number', validators=[Required()])
     parentGuardian = StringField("Enter your parent or guardian's full name", validators=[Required()])
-    course = RadioField('Select your course', choices=[('Introduction to computers','Introduction to computers'),('Introduction to Programming','Introduction to Programming'), ('Web design 101', 'Web design 101'), ('Databases', 'Databases'), ('Application development', 'Application development')], validators=[Required()])
+    course = RadioField('Select your course', choices=[('Introduction to computers','Introduction to computers'),('Introduction to Programming','Introduction to Programming'), ('Web design 101', 'Web design 101'), ('Databases', 'Databases')], validators=[Required()])
     paymentPlan = RadioField('Select your payment plan', choices=[('self-sponsored','self-sponsored'),('scholarship','scholarship'), ('bursary', 'bursary')], validators=[Required()])
     password = PasswordField('Create Password', validators=[Required(), EqualTo('password_confirm', message='Passwords must match')])
     password_confirm = PasswordField('Confirm Password', validators=[Required()])

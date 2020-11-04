@@ -6,7 +6,7 @@ from .. import db
 import random
 import string
 from flask_login import login_user, logout_user, login_required
-
+from ..email import mail_message
 
 #email, name, contact, parentGuardian, course, paymentPlan, password, password_confirm, submit
 @auth.route('/login', methods = ['GET', 'POST'])
@@ -40,6 +40,8 @@ def register():
         user = User(email = form.email.data, name = form.name.data, contact = form.contact.data, parentGuardian = form.parentGuardian.data, course = form.course.data, paymentPlan = form.paymentPlan.data, password = form.password.data, student_id = students_id)
         db.session.add(user)
         db.session.commit()
+
+        mail_message("Your Student Account Has Been Created", "email/welcome_user", user.email, user = user)
 
         return redirect(url_for('auth.login'))
         title = 'New Account'
