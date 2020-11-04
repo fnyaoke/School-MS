@@ -1,15 +1,21 @@
 from . import db
 from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import UserMixin
+from . import login_manager
 
 #Registration form details Name, email, contact, guardian/parent,  courses (Introduction to computers, Introduction to Programming, Web design 101, Databases, Application Development),  payment plan (self sponsored/ scholarship/ bursary), course fees, course units, duration of courses six months
 #try to implement radio fields in registration form that will indicate course. link courses and users maybe
 #student id will be implememted using a random generated and looping through existing ones
 
-class User(db.Model):
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int( user_id))
+
+class User(UserMixin, db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer,primary_key = True)
     name = db.Column(db.String(255))
-    email = db.Column(db.String(255))
+    email = db.Column(db.String(255), unique = True, index = True)
     contact = db.Column(db.String(255))
     student_id = db.Column(db.String(255))
     parentGuardian = db.Column(db.String(255))
