@@ -1,0 +1,3 @@
+Hello {{user.name}}
+Your student account for Tushauriane School has been created.
+Your student id is {{user.student_id}}. Enjoy your time learning at the school!
