@@ -28,7 +28,12 @@ def login():
 def register():
     form = RegistrationForm()
      
-    students_id = random.randint(0,10)
+    digits = string.digits
+    students_id = ''.join((random.choice(digits) for i in range(10)))
+    if User.query.filter_by(student_id = students_id).first():
+        
+        digits = string.digits
+        students_id = ''.join((random.choice(digits) for i in range(10)))
     
     if form.validate_on_submit():
         user = User(email = form.email.data, name = form.name.data, contact = form.contact.data, parentGuardian = form.parentGuardian.data, course = form.course.data, paymentPlan = form.paymentPlan.data, password = form.password.data, student_id = students_id)
