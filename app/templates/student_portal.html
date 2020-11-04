@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<h1>hi {{user.name}}</h1>
+<div class="container">
+<h1 style="text-align: center;">STUDENT PORTAL</h1>
+<hr>
+<h2 style="text-align: center;">STUDENT: {{user.name}}</h2>
+<hr>
+<h3 style="text-align: center;">COURSE: {{user.course}}</h3>
+</div>
 
 {% endblock %}
