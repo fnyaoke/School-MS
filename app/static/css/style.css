@@ -73,3 +73,12 @@
     border-radius: 10px;
     font-weight: bold;
 }
+/*footer*/
+footer{
+    padding: 2.5rem;
+    border-top: #28A745;
+    background: #fff;
+}
+footer p{
+    text-align: center;
+}
