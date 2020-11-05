@@ -54,16 +54,19 @@
 .showcase-content h1 {
     font-size: 4rem;
     margin-bottom: 2rem;
-}  
+}
 .showcase-content .btn {
     font-size: 1.5rem;
     padding: 1rem 10rem;
     transition: color 0.03s,background 0.03s;
-} 
+}
 .showcase-content .btn:hover {
     background: #28A745;
     color: #fff;
-} 
+}
+span a {
+    color: #28A745;
+}
 .btn {
     color: #28A745;
     text-decoration: none;
@@ -72,4 +75,72 @@
     border: 1px solid #28A745;
     border-radius: 10px;
     font-weight: bold;
+}
+.carousel-item .view { /* style all carousel images */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-item .courses1 {
+  background-image: url("../courseimages/graduation.jpg");
+
+}
+.carousel-item .courses2 {
+  background-image: url("../courseimages/impact.jpg");
+
+}
+.carousel-item .courses3 {
+  background-image: url("../courseimages/Discussion.jpg");
+
+}
+.carousel-item .courses4 {
+  background-image: url("../courseimages/Library.jpg");
+}
+.carousel-item .courses5 {
+  background-image: url("../courseimages/Student.jpg");
+}
+
+.carousel-inner h1 {
+    /* styling the catch phrase */
+    font-family: 'Noto Serif', serif;
+    /* padding-top: 60%; */
+    line-height: 65px;
+    font-size: 3vw;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #28A745;
+    padding-top: 0px;
+    align-items: center;
+    margin-right: 400px;
+    margin-left: 400px;
+
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+.row {
+  display: flex;
+  /* background-color: yellow; */
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+
+};
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+h2{
+  font-style: italic;
 }
