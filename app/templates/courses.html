@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/app/static/css/courses.css">
     <link rel="stylesheet" href="css/fonts/beyond_the_mountains-webfont.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Google font-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!--font awesome-->
@@ -34,124 +37,15 @@
             <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a><em>facebook</em></li>
         </ul>
     </nav>
-    <header id="showcase">
-        <!--Carousel Wrapper-->
-    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="3"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="4"></li>
-        </ol>
-        <!--/.Indicators-->
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-            <!--First slide-->
-            <div class="carousel-item active">
-                <div class="view courses1">
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-                        <!-- Content -->
-                        <div class=" white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4" style="padding-top: 90%;">
-                                <strong>Get a chance to advance,<br> your life today!</strong>
-                            </h1>
-                        </div>
-                        <!-- Content -->
-                    </div>
-                    <!-- Mask & flexbox options-->
-                </div>
-            </div>
-            <!--/First slide-->
-            <!--Second slide-->
-            <div class="carousel-item">
-                <div class="view courses2">
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4" style="padding-top: 44%;">
-                                <strong>Your career path begins,<br> with a good education.</strong>
-                            </h1>
-                        </div>
-                        <!-- Content -->
-                    </div>
-                    <!-- Mask & flexbox options-->
-                </div>
-            </div>
-            <!--/Second slide-->
-            <!--Third slide-->
-            <div class="carousel-item">
-                <div class="view courses3">
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4" style="padding-top: 35%;">
-                                <strong>TUSHAURIANE offers a supportive and serene learning environment.</strong>
-                            </h1>
-                        </div>
-                        <!-- Content -->
-                    </div>
-                    <!-- Mask & flexbox options-->
-                </div>
-            </div>
-            <!--/Third slide-->
-            <!--Fourth slide-->
-            <div class="carousel-item">
-                <div class="view courses4">
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4" style="padding-top: 36%;">
-                                <strong>With State of the art Learning facilities.</strong>
-                            </h1>
-                        </div>
-                        <!-- Content -->
-                    </div>
-                    <!-- Mask & flexbox options-->
-                </div>
-            </div>
-            <!--/Fourth slide-->
-            <!--Fifth slide-->
-            <div class="carousel-item">
-                <div class="view courses5">
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4" style="padding-top: 30%;">
-                                <strong>....And a student support system that is unrivalled.</strong>
-                            </h1>
-                        </div>
-                        <!-- Content -->
-                    </div>
-                    <!-- Mask & flexbox options-->
-                </div>
-            </div>
-            <!--/Fifth slide-->
-        <!--/.Slides-->
-    </div>
-    <!--/.Carousel Wrapper-->
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!--SCRIPTS-->
-    </header>
-
-    <!--Showcase Area-->
+    <div class="container">
     <h1>Our Courses</h1>
-    <div class="row">
-        <div class="column">
-            <h2>Introduction to computers</h2>
-            <p>In this digital era, being computer savvy is a necessity for advancing your career, join us.</p>
+    <div class="row" >
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h2 class="card-title">Introduction to computers</h2>
+                  <p>In this digital era, being computer savvy is a necessity for advancing your career, join us.</p>
             <ul>
                 <li>Definition and computer hardware</li>
                 <li>Word processors packages</li>
@@ -159,11 +53,15 @@
                 <li>Data analysis using Spreadsheets</li>
             </ul>
             <p id="course-cost">KES 30,000/-</p>
-            <p><a href="#comps">Read more...</a></p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+            </div>
         </div>
-        <div class="column">
-            <h2>Introduction to programming</h2>
-            <p>Speak the language of computers and make your own basic software.</p>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h2 class="card-title">Introduction to programming</h2>
+                  <p>Speak the language of computers and make your own basic software.</p>
             <ul>
                 <li>Definition and programming languages</li>
                 <li>Visual basic</li>
@@ -171,35 +69,52 @@
                 <li>Elective Unit</li>
             </ul>
             <p id="course-cost">KES 30,000/-</p>
-            <p><a href="#programming">Read more...</a></p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+            </div>
         </div>
     </div>
-    <div class="row-2">
-        <div class="column">
-            <h2>Web Design 101</h2>
-            <p>Everyone needs a website for their profile, business or to share their thoughts. This is the course that enables you to create websites.</p>
-            <ul>
-                <li>Html and CSS</li>
-                <li>Scripting Languages</li>
-                <li>Website Add ons</li>
-                <li>Web applications</li>
-            </ul>
-            <p id="course-cost">KES 30,000/-</p>
-            <p><a href="#webdesign">Read more...</a></p>
-        </div>
-        <div class="column">
-            <h2>Databases</h2>
-            <p>Learn more about digital data storage, analysis and retrieval.</p>
-            <ul>
-                <li>Introduction to Databases</li>
-                <li>Types of Databases</li>
-                <li>Database Relationships</li>
-                <li>Database application</li>
-            </ul>
-            <p id="course-cost">KES 30,000/-</p>
-            <p><a href="#data">Read more...</a></p>
+</div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card"  style="width: 30rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h2 class="card-title">Web Design 101</h2>
+                     <p> This is the course that enables you to create websites for yourself and others that may need them.</p>
+                        <ul>
+                            <li>Html and CSS</li>
+                            <li>Scripting Languages</li>
+                            <li>Website Add ons</li>
+                            <li>Web applications</li>
+                        </ul>
+                        <p id="course-cost">KES 30,000/-</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                    <!-- <div class="col-sm-4"> -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card"  style="width: 30rem;">
+                                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                    <div class="card-body">
+                                      <h2 class="card-title">Databases</h2>
+                                      <p>Learn more about digital data storage, dependencies, relationships, analysis, retrieval and many more.</p>
+                                      <ul>
+                                          <li>Introduction to Databases</li>
+                                          <li>Types of Databases</li>
+                                          <li>Database Relationships</li>
+                                          <li>Database application</li>
+                                      </ul>
+                                            <p id="course-cost">KES 30,000/-</p>
+                                            <a href="#" class="btn btn-primary">Read More</a>
+                                        </div>
+                                    </div>
         </div>
     </div>
-   
+</div>
+<div>
+
+</div>
+
     </body>
     </html>
