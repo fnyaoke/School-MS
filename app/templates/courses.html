@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,18 +28,7 @@
 </head>
 <body id="courses">
   <!--Navbar-->
-    <nav id="navbar">
-        <h2><a href="../templates/index.html"><span class="text-primary">TUSHAURIANE</span><br>Institute.</a></h2>
-        <ul>
-            <li><a href="../templates/index.html">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="../templates/courses.html">Courses</a></li>
-            <li><a href="../templates/co_curricular.html">Co_Curricular</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li><a href="/app/templates/student_portal.html">Student_portal</a></li>
-            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a><em>facebook</em></li>
-        </ul>
-    </nav>
+    
     <div class="container">
          <!--Showcase Area-->
     <header id="showcase">
@@ -143,3 +135,5 @@
 
     </body>
     </html>
+
+{% endblock %}

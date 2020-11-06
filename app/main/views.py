@@ -14,6 +14,26 @@ def index():
     return render_template('index.html')
 
 
+@main.route('/courses')
+def courses():
+
+    '''
+    View root page function that returns the course page and its data
+    '''
+    
+    return render_template('courses.html')
+
+
+@main.route('/curriculars')
+def curriculars():
+
+    '''
+    View root page function that returns the co curricular page and its data
+    '''
+    
+    return render_template('co_curricular.html')
+
+
 
 @main.route('/user/<student_id>')
 def profile(student_id):

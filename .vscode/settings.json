@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "Cocurricular"
-    ]
+    ],
+    "python.pythonPath": "virtual/bin/python"
 }
