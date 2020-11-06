@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% import 'navbar.html' as navbar%}
+
+{% block styles%}
+{{super()}}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+{% endblock %}
+
+<section id="index">
+
+  {% block content %}
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">ABOUT</h1>
+      <p style="font-family: 'Courgette', cursive;">We create life enhancing learning experiences that help students worldwide to develop personally and
+        professionally and that enrich their future opportunities.</p>
+      <h3>ESTABLISHED</h3>
+      <p class="lead" style="font-family: 'Courgette', cursive;">Tushauriane is an esteemed institution of higher learning in Kenya established in 2015.</p>
+      <h3>TUSHAURIANE AT A GLANCE</h3>
+
+      <div class="row">
+        <div class="column">
+          <img src="../static/photos/classroom.jpg" alt="Lecture" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="../static/photos/discussion.jpg" alt="Groupwork discussion" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="../static/photos/Library.jpg" alt="Library" style="width:100%">
+        </div>
+    </div>
+     
+
+      <h1><strong>LEADERSHIP</strong></h1>
+      <p style="font-family: 'Courgette', cursive;">Tushauriane's leadership is responsible for the strategic vision for the university. Masomo Bora leads
+        Tushauriane as the 4th President of the university.</p>
+      <p style="font-family: 'Courgette', cursive;">The Chief of Academics fosters collaboration across the university and manages policies and practices that
+        affect the academic life.</p>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"><strong> WHO WE ARE</strong></h1>
+      <h3><strong>MISSION STATEMENT</strong></h3>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+
+      <h3><strong>VISION STATEMENT</strong></h3>
+      <p class="lead" style="font-family: 'Courgette', cursive;">The University’s buildings and estate are not only necessary for our academic work, but also
+        contribute to Tushauriane’s reputation as a city of learning, heritage and culture. They form a vital part of
+        the rich architecture of the city and provide a beautiful environment for visitors and Tushauriane’s residents, as
+        well as for students and staff of the University.</p>
+
+      <h3><strong>OUR CORE VALUES</strong></h3>
+      <p class="lead" style="font-family: 'Courgette', cursive;">Our Core Values are at the heart of our business. They define who we are, how we work and guide
+        how we act with each other and with other stakeholders.</p>
+      <ul>
+        <li style="font-family: 'Courgette', cursive;">INTEGRITY: We build relationships through trust, honesty and respect.</li>
+        <li style="font-family: 'Courgette', cursive;">CREATIVITY: We are not afraid to be different and we celebrate innovation.</li>
+        <li style="font-family: 'Courgette', cursive;">PASSION & PRIDE: We love what we do and strive for excellence</li>
+        <li style="font-family: 'Courgette', cursive;">CARE: We put our students and their goals at the heart of everything we do</li>
+        
+      </ul>
+
+      <h3><strong>EDUCATION</strong></h3>
+      <ul>
+        <li>Education which enhances the ability of students to learn throughout life</li>
+        <li>Quality and depth of provision across all subjects</li>
+        <li>The close inter-relationship between teaching, scholarship, and research</li>
+        <li>Strong support for individual researchers as well as research groups</li>
+      </ul>
+
+      <h3><strong>OTHER ACTIVITIES</strong></h3>
+      <p>The opportunities for broadening the experience of students and staff through participation in sport, 
+        music, drama, the visual arts, and other cultural activities</p>
+
+
+    </div>
+  </div>
+
+  {% endblock%}
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

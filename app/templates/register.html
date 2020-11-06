@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block content %}
+
+
+<div class="container">
+    <h3 style="text-align: center;"><strong>REGISTER FOR YOUR STUDENT ACCOUNT BELOW: </strong></h3>
+    <hr>
+    <div class="row">
+        <div class="col-md-2">
+            
+        </div>
+        <div class="col-md-8">
+        <form method="post">
+            {{ registration_form.hidden_tag() }}
+            <p>{{wtf.form_field(registration_form.email)}}</p>
+
+            
+            <p>{{wtf.form_field(registration_form.name)}}</p>
+
+            
+            <p>{{wtf.form_field(registration_form.contact)}}</p>
+
+            
+            <p>{{wtf.form_field(registration_form.parentGuardian)}}</p>
+
+            <p><strong>{{registration_form.course.label}}</strong></p>
+            <p>{{wtf.form_field(registration_form.course)}}</p>
+
+            <p><strong>{{registration_form.paymentPlan.label}}</strong></p>
+            <p>{{wtf.form_field(registration_form.paymentPlan)}}</p>
+
+            
+            <p>{{wtf.form_field(registration_form.password)}}</p>
+
+            
+            <p>{{wtf.form_field(registration_form.password_confirm)}}</p>
+            
+            <input type=submit value=Register>
+            
+        </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
