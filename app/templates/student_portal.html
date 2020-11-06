@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 style="text-align: center;">STUDENT PORTAL</h1>
+    <hr>
+    <h2 style="text-align: center;">STUDENT: {{user.name}}   <span><h3 style="text-align: center;">(Student id: {{user.student_id}})</h3></span></h2>
+    
+    <hr>
+    <h3 style="text-align: center;">COURSE: {{user.course}}</h3>
+    
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            
+            <ul style="text-align: center;">
+                <h3>Course units</h3>
+                <hr>
+            {% for unit in courses %}
+                <h4>- {{unit}}</h4>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul style="text-align: center;">
+                <h3>Fees: {{course_fees}}</h3>
+                <h3>Duration: {{course_duration}}</h3>
+            </ul>
+            
+
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}
