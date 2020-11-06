@@ -1,0 +1,5 @@
+export SECRET_KEY=<SECRET_KEY>
+export MAIL_USERNAME=<your email here>
+export MAIL_PASSWORD=<Your Password here>
+
+python3.6 manage.py server
