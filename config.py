@@ -8,7 +8,7 @@ class Config:
 
 
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://student:Amazeing16@localhost/school_ms'
+ #   SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://student:Amazeing16@localhost/school_ms'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
@@ -26,8 +26,8 @@ class ProdConfig(Config):
     Args:
         Config: The parent configuration class with general configuration settings
     '''
-#    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-    pass
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    
 class TestConfig(Config):
 #    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://student:Amazeing16@localhost/one_min_app_test'
     pass
@@ -39,7 +39,7 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with general configuration settings
     '''
-#    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://student:Amazeing16@localhost/one_min_app'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://student:Amazeing16@localhost/one_min_app'
     DEBUG = True
 
 config_options = {
